@@ -1,0 +1,42 @@
+<!--darin -->
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-9">
+<form method="POST">
+    <div class="form-group">
+      <label for="squereFeet">Square Feet</label>
+      <input type="text" class="form-control" name="SquareFeet" value="{{sqrFeet}}"  placeholder="Square Feet">
+    </div>
+    <div class="form-group">
+      <label for="size">Plot Size</label>
+      <input type="text" class="form-control" name="size" value="{{size}}" placeholder="Plot Size">
+    </div>
+
+    <div class="form-group">
+        <label for="bed">Num of Bedrooms</label>
+        <input type="text" class="form-control" name="bed" value="{{bed}}" placeholder="Num of Bedrooms">
+      </div>
+      <div class="form-group">
+        <label for="bath">Num of Bathrooms</label>
+        <input type="text" class="form-control" name="bath" value="{{bath}}" placeholder="Num of Bathrooms">
+      </div>
+      <div class="form-group">
+        <label for="rooms">Num of Rooms</label>
+        <input type="text" class="form-control" name="rooms" value="{{rooms}}" placeholder="Num of Rooms">
+      </div>    
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+  <br>
+  <div class="col-3 align-self-center">
+  {% if price %}
+  <div class="alert alert-primary" role="alert">
+    Price :{{price}}
+  </div>
+</div>
+  {% endif %}
+</div>
+
+{% endblock content %}
