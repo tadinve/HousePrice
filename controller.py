@@ -7,6 +7,9 @@ app = Flask(__name__)
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
+        infile = open('model.pickle','rb')
+        model = pickle.load(infile,encoding='latin1')
+        
         sqrFeet= request.form.get('SquareFeet')
         size=  request.form.get('size')
         bed =   request.form.get('bed')
