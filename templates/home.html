@@ -1,4 +1,3 @@
-<!--darin -->
 {% extends "layout.html" %}
 {% block content %}
 <div class="row">
@@ -47,15 +46,11 @@
   <br>
   <div class="col-md-3 align-self-center">
     {% if price %}
-    <!-- <div class="alert alert-primary" role="alert">
-      Price: {{price}}
-    </div> -->
     <div class="form-group">
-      <label for="price">Price</label>
       <input type="text" class="form-control" readonly value="{{price}}" style="background-color:lightgreen;">
     </div>
+    {% endif %}
   </div>
-  {% endif %}
 </div>
 
 {% endblock content %}

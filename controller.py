@@ -19,7 +19,7 @@ def home():
         floors = request.form.get('floors')
         l = [bed, bath, sqrFeet, size, floors]
         l = list(map(int, l))
-        price = '${:,.2f}'.format(model.predict([l])[0]*5)
+        price = '${:,.2f}'.format(model.predict([l])[0])
         #price = sum(l)
         return render_template("home.html", price=price, sqrFeet=sqrFeet, size=size, bed=bed, bath=bath, floors=floors)
     sqrFeet = 0
