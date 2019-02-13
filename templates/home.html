@@ -22,10 +22,10 @@
         <input type="text" class="form-control" name="bath" value="{{bath}}" placeholder="Num of Bathrooms">
       </div>
       <div class="form-group">
-        <label for="rooms">Num of Rooms</label>
-        <input type="text" class="form-control" name="rooms" value="{{rooms}}" placeholder="Num of Rooms">
-      </div>    
-    
+        <label for="rooms">Num of Floors</label>
+        <input type="text" class="form-control" name="floors" value="{{floors}}" placeholder="Num of Floors">
+      </div>
+
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
   </div>
@@ -33,7 +33,7 @@
   <div class="col-3 align-self-center">
   {% if price %}
   <div class="alert alert-primary" role="alert">
-    Price :{{price}}
+    Price: {{price}}
   </div>
 </div>
   {% endif %}
