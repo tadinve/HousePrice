@@ -22,6 +22,7 @@ This is a simple Flask app that will predict the house price using sci-kit Learn
   - Explore the rest of the code. Can you figure out what the other files do?
 
 ### 3) Deploy to Heroku! (requires heroku install & signup)
+  - sudo snap install --classic heroku
   - heroku create
   - git add .
   - git commit -m "initial commit"
