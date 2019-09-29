@@ -10,7 +10,7 @@ This is a simple Flask app that will predict the house price using sci-kit Learn
 
   - git clone https://github.com/tadinve/HousePrice
   - cd HousePrice
-  - virtualenv --python=python3.6 venv
+  - virtualenv --python=python3 venv
   - source venv/bin/activate
   - pip install -r requirements.txt
 
